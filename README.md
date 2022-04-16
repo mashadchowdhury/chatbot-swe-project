@@ -1,4 +1,4 @@
-# Individual Project Chatbot that implements Google Maps and Google Translate API
+# Individual Project Chatbot that implements Wikipedia and Google Translate API
 
 Where to find Individual Project files:
 1. All code incorporating the APIs into the Chatbot are located in **Chat/Chat/src/Chatbot/Chatbot.java** (10 points)
