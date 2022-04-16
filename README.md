@@ -37,7 +37,7 @@ On the other hand, this model does slow down the process as the team needs to co
  |API|How it was used in my chatbot|
  |---|---|
  |Google Translate API|The google translate API reads a portion of the user input (in my program, the portion placed between brackets), and then outputs a real time translation of the inputted word or phrase, into a desired language (in my case, French)|
- |Wikipedia API|The Wikipedia API extracts knowledge about a celebrity or famous person that the user inputs, and the Chatbot outputs information about them such as name, a summary of their work, and a link to the online account so the user can learn more about them|
+ |Wikipedia API|The Wikipedia API extracts knowledge about a celebrity or famous person, whose name the user inputs (in my program, the chatbot reads the portion placed between asterisks), and the Chatbot outputs certain information about them such as name, a summary of their work, and a link to the online URL so the user can learn more about them|
 ---
 ## Data Flow Diagrams
 
