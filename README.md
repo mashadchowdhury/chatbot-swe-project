@@ -1,9 +1,9 @@
 # Individual Project Chatbot that implements Google Maps and Google Translate API
 
 Where to find Individual Project files:
-1. All code incorporating the APIs into the Chatbot are located in **Chat/Chat/src/Chatbot/Chatbot.java**
-2. Project Documentation is located in the file named **Documentation Report Individual Project.pdf**
-3. Video submission is located in the file named **Individual Project Video Submission.mp4**
+1. All code incorporating the APIs into the Chatbot are located in **Chat/Chat/src/Chatbot/Chatbot.java** (10 points)
+2. Project Documentation is located in the file named **Documentation Report Individual Project.pdf** (7.5 points)
+3. Video submission is located in the file named **Individual Project Video Submission.mp4** (2.5 points)
 
 ## A brief description of my project: <br>
 My project is a simple and friendly chat-bot with which the user can talk about their hobbies, interests etc.  I am using the chat bot as a friend but in most cases these days these bots are used for customer service. Keeping in mind the recent pandemic and how it has changed everyone’s social lives. A virtual “friend” is able to make normal conversations and allows the user to chat to this bot anytime and share their experiences when their friends are busy or for the people who have a hard time socialising.
