@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.net.Socket;
 import java.net.URL;
 import java.net.URLConnection;
@@ -16,6 +17,8 @@ import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+
+import Jwiki.Jwiki;
 
 public class ChatBot extends JFrame implements ActionListener {
 	static JTextArea area = new JTextArea();
@@ -62,13 +65,32 @@ public class ChatBot extends JFrame implements ActionListener {
 	}
 
 	public void actionPerformed(ActionEvent e) {
+		Translate fr = new Translate();
+		//Jwiki jwiki = new Jwiki(""); 
 		String message = field.getText().toLowerCase();
 
 		area.append("You : " + field.getText() + "\n");
 		field.setText("");
 		Socket sock = new Socket();
-
-		if (message.contains("how are you")) {
+		
+		if(message.contains("*")) {
+			try {
+					Jwiki jwiki = new Jwiki(message.substring(message.indexOf("*")+1,message.lastIndexOf("*")));
+					bot(jwiki.getExtractText());
+		}
+			catch(Exception errwiki) {
+				bot("Try again");
+			}
+		}
+		else if(message.contains("(") && message.contains(")")){
+			try{
+				bot("Translation: "+Translate.translate("en", "fr", message.substring(message.indexOf("(")+1,message.indexOf(")"))));
+			}
+			catch(IOException errtranslate) {
+				bot("Try again.");
+			}
+		}
+		else if (message.contains("how are you")) {
 			int num = random.nextInt(3);
 			if (num == 0) {
 				bot("I'm fine !,What about you ? ");
@@ -77,6 +99,9 @@ public class ChatBot extends JFrame implements ActionListener {
 			} else {
 				bot("I am great ,thanks for asking !");
 			}
+			
+			
+			
 
 		} else if (message.contains("you") && (message.contains("smart") || message.contains("good"))) {
 			bot("Thank you !");
@@ -253,7 +278,9 @@ public class ChatBot extends JFrame implements ActionListener {
 		area.append("Bot : " + message + "\n");
 	}
 
+	
 	public static void main(String[] args) {
+		Translate fr = new Translate();
 		// TODO Auto-generated method stub
 		ChatBot cb = new ChatBot("Chat Bot");
 		cb.setSize(800, 605);
