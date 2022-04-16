@@ -40,7 +40,7 @@ On the other hand, this model does slow down the process as the team needs to co
  |Google Translate API|The google translate API reads a portion of the user input (in my program, the portion placed between brackets), and then outputs a real time translation of the inputted word or phrase, into a desired language (in my case, French)|
 ---
 ## Added Files for API to work:
-1. JWiki.jar: This is a .jar file that the ChatBot uses to extract data from the Wikipedia URL connection. This file works by reading the user input that is placed between asterisks ( as such: * bill gates * ), add then locates the Wikipedia page that is titled Bill Gates, after which the ChatBot dislays in real-time the extracted data from that page, such as the title of the article (by using .getDisplayTitle()), summary of their work (by using .getExtractText()), URL of an image (by using .getImageURL()), etc.
+1. JWiki.jar: This is a .jar file that the ChatBot uses to extract data from the Wikipedia URL connection. This file works by reading the user input that is placed between asterisks ( as such: * bill gates * ), and then locates the Wikipedia page that is titled Bill Gates. The ChatBot then dislays in real-time the extracted data from that page, such as the title of the article (by using .getDisplayTitle()), summary of their work (by using .getExtractText()), URL of an image (by using .getImageURL()), etc.
 2. Translate.java: This is a java file that contains the required information to establish a connected with the Google Translate API. This file enables the ChatBot to read the portion of the user's input between brackets ( as such: (How are you?) ), after which the ChatBot outputs the respective translation of the input into French.
 ---
 ## Data Flow Diagrams
