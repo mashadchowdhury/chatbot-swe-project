@@ -31,13 +31,17 @@ On the other hand, this model does slow down the process as the team needs to co
 4. Before there were 3 responses given if the user entered something out of topic, now there are five responses that the bot can provide the user with. The responses before were more repetitive and now as there are more responses that the bot could give, so the uder feels like it is a more normal conversation rather than talking to a bot.(**Figure 3**)
 5. On entering “Clear screen” our Code clears the conversation and sets the screen empty 
 6. If the user input is not understood by the Code, our code opens google search to look up for solutions.
-
+---
 ## Updates after Individual Project
 ### APIs incorporated:
  |API|How it was used in my chatbot|
  |---|---|
- |Google Translate API|The google translate API reads a portion of the user input (in my program, the portion placed between brackets), and then outputs a real time translation of the inputted word or phrase, into a desired language (in my case, French)|
  |Wikipedia API|The Wikipedia API extracts knowledge about a celebrity or famous person, whose name the user inputs (in my program, the chatbot reads the portion placed between asterisks), and the Chatbot outputs certain information about them such as name, a summary of their work, and a link to the online URL so the user can learn more about them|
+ |Google Translate API|The google translate API reads a portion of the user input (in my program, the portion placed between brackets), and then outputs a real time translation of the inputted word or phrase, into a desired language (in my case, French)|
+---
+## Added Files for API to work:
+1. JWiki.jar: This is a .jar file that the ChatBot uses to extract data from the Wikipedia URL connection. This file works by reading the user input that is placed between asterisks ( as such: * bill gates * ), add then locates the Wikipedia page that is titled Bill Gates, after which the ChatBot dislays in real-time the extracted data from that page, such as the title of the article (by using .getDisplayTitle()), summary of their work (by using .getExtractText()), URL of an image (by using .getImageURL()), etc.
+2. Translate.java: This is a java file that contains the required information to establish a connected with the Google Translate API. This file enables the ChatBot to read the portion of the user's input between brackets ( as such: (How are you?) ), after which the ChatBot outputs the respective translation of the input into French.
 ---
 ## Data Flow Diagrams
 
