@@ -1,4 +1,4 @@
-# Software Engineering Project Chatbot that implements Wikipedia and Google Translate API
+# Software Engineering Project - Chatbot
 
 Where to find Individual Project files:
 1. All code incorporating the APIs into the Chatbot are located in **Chat/Chat/src/Chatbot/Chatbot.java** (10 points)
@@ -6,8 +6,6 @@ Where to find Individual Project files:
 3. Video submission is located in the file named **Individual Project Video Submission.mp4** (2.5 points)
 
 ---
-
-![chatbot](https://github.com/mashadchowdhury/mashadchowdhury.github.io/blob/main/img/posts/chatbot.png)
 
 ## A brief description of my project: <br>
 My project is a simple and friendly chat-bot with which the user can talk about their hobbies, interests etc.  I am using the chat bot as a friend but in most cases these days these bots are used for customer service. Keeping in mind the recent pandemic and how it has changed everyone’s social lives. A virtual “friend” is able to make normal conversations and allows the user to chat to this bot anytime and share their experiences when their friends are busy or for the people who have a hard time socialising.
@@ -62,3 +60,7 @@ I have also added two data flow diagrams for this project.
 ### Data Flow Diagram for Level 1:
 ![dfd1](https://github.com/aaliazoya/COSC-310-Assignment2/blob/main/images/Data%20Flow%20Diagram%20level%201%20(1).png)
 ---
+
+## Sample screenshot of Chatbot
+
+![chatbot](https://github.com/mashadchowdhury/mashadchowdhury.github.io/blob/main/img/posts/chatbot.png)
